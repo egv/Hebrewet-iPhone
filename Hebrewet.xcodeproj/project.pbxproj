@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		904D535B12AAF23600B867C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904D535A12AAF23600B867C5 /* UIKit.framework */; };
+		904D535D12AAF23600B867C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904D535C12AAF23600B867C5 /* Foundation.framework */; };
+		904D535F12AAF23600B867C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904D535E12AAF23600B867C5 /* CoreGraphics.framework */; };
+		904D536412AAF23600B867C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904D536212AAF23600B867C5 /* InfoPlist.strings */; };
+		904D536612AAF23600B867C5 /* Hebrewet-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D536512AAF23600B867C5 /* Hebrewet-main.m */; };
+		904D536912AAF23600B867C5 /* HebrewetAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D536812AAF23600B867C5 /* HebrewetAppDelegate.m */; };
+		904D536C12AAF23600B867C5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904D536A12AAF23600B867C5 /* MainWindow.xib */; };
+		904D536F12AAF23600B867C5 /* HebrewetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D536E12AAF23600B867C5 /* HebrewetViewController.m */; };
+		904D537212AAF23600B867C5 /* HebrewetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 904D537012AAF23600B867C5 /* HebrewetViewController.xib */; };
+		904D537A12AAF23600B867C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904D535A12AAF23600B867C5 /* UIKit.framework */; };
+		904D537B12AAF23600B867C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904D535C12AAF23600B867C5 /* Foundation.framework */; };
+		904D537C12AAF23600B867C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904D535E12AAF23600B867C5 /* CoreGraphics.framework */; };
+		904D538012AAF23600B867C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904D537F12AAF23600B867C5 /* InfoPlist.strings */; };
+		904D538212AAF23600B867C5 /* HebrewetTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 904D538112AAF23600B867C5 /* HebrewetTests.h */; };
+		904D538412AAF23600B867C5 /* HebrewetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 904D538312AAF23600B867C5 /* HebrewetTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		904D535712AAF23600B867C5 /* Hebrewet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hebrewet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		904D535A12AAF23600B867C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		904D535C12AAF23600B867C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		904D535E12AAF23600B867C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		904D536012AAF23600B867C5 /* Hebrewet-Info.plist */ = {isa = PBXFileReference; path = "Hebrewet-Info.plist"; sourceTree = "<group>"; };
+		904D536112AAF23600B867C5 /* Hebrewet-Prefix.pch */ = {isa = PBXFileReference; path = "Hebrewet-Prefix.pch"; sourceTree = "<group>"; };
+		904D536312AAF23600B867C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		904D536512AAF23600B867C5 /* Hebrewet-main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Hebrewet-main.m"; sourceTree = "<group>"; };
+		904D536712AAF23600B867C5 /* HebrewetAppDelegate.h */ = {isa = PBXFileReference; path = HebrewetAppDelegate.h; sourceTree = "<group>"; };
+		904D536812AAF23600B867C5 /* HebrewetAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HebrewetAppDelegate.m; sourceTree = "<group>"; };
+		904D536B12AAF23600B867C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		904D536D12AAF23600B867C5 /* HebrewetViewController.h */ = {isa = PBXFileReference; path = HebrewetViewController.h; sourceTree = "<group>"; };
+		904D536E12AAF23600B867C5 /* HebrewetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HebrewetViewController.m; sourceTree = "<group>"; };
+		904D537112AAF23600B867C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HebrewetViewController.xib; sourceTree = "<group>"; };
+		904D537912AAF23600B867C5 /* HebrewetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HebrewetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		904D537D12AAF23600B867C5 /* HebrewetTests-Info.plist */ = {isa = PBXFileReference; path = "HebrewetTests-Info.plist"; sourceTree = "<group>"; };
+		904D537E12AAF23600B867C5 /* HebrewetTests-Prefix.pch */ = {isa = PBXFileReference; path = "HebrewetTests-Prefix.pch"; sourceTree = "<group>"; };
+		904D537F12AAF23600B867C5 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/HebrewetTests/InfoPlist.strings; sourceTree = "<group>"; };
+		904D538112AAF23600B867C5 /* HebrewetTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HebrewetTests.h; sourceTree = "<group>"; };
+		904D538312AAF23600B867C5 /* HebrewetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HebrewetTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		904D535412AAF23600B867C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904D535B12AAF23600B867C5 /* UIKit.framework in Frameworks */,
+				904D535D12AAF23600B867C5 /* Foundation.framework in Frameworks */,
+				904D535F12AAF23600B867C5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904D537512AAF23600B867C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904D537A12AAF23600B867C5 /* UIKit.framework in Frameworks */,
+				904D537B12AAF23600B867C5 /* Foundation.framework in Frameworks */,
+				904D537C12AAF23600B867C5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		904D534812AAF23500B867C5 = {
+			isa = PBXGroup;
+			children = (
+				904D534F12AAF23600B867C5 /* Classes */,
+				904D535012AAF23600B867C5 /* Other Sources */,
+				904D535112AAF23600B867C5 /* Resources */,
+				904D535212AAF23600B867C5 /* Frameworks */,
+				904D535812AAF23600B867C5 /* Products */,
+				904D537312AAF23600B867C5 /* Tests */,
+			);
+			sourceTree = "<group>";
+		};
+		904D534F12AAF23600B867C5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				904D536712AAF23600B867C5 /* HebrewetAppDelegate.h */,
+				904D536812AAF23600B867C5 /* HebrewetAppDelegate.m */,
+				904D536D12AAF23600B867C5 /* HebrewetViewController.h */,
+				904D536E12AAF23600B867C5 /* HebrewetViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		904D535012AAF23600B867C5 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				904D536112AAF23600B867C5 /* Hebrewet-Prefix.pch */,
+				904D536512AAF23600B867C5 /* Hebrewet-main.m */,
+				904D537E12AAF23600B867C5 /* HebrewetTests-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		904D535112AAF23600B867C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				904D536012AAF23600B867C5 /* Hebrewet-Info.plist */,
+				904D536212AAF23600B867C5 /* InfoPlist.strings */,
+				904D536A12AAF23600B867C5 /* MainWindow.xib */,
+				904D537012AAF23600B867C5 /* HebrewetViewController.xib */,
+				904D537D12AAF23600B867C5 /* HebrewetTests-Info.plist */,
+				904D537F12AAF23600B867C5 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		904D535212AAF23600B867C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				904D535A12AAF23600B867C5 /* UIKit.framework */,
+				904D535C12AAF23600B867C5 /* Foundation.framework */,
+				904D535E12AAF23600B867C5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		904D535812AAF23600B867C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				904D535712AAF23600B867C5 /* Hebrewet.app */,
+				904D537912AAF23600B867C5 /* HebrewetTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		904D537312AAF23600B867C5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				904D538112AAF23600B867C5 /* HebrewetTests.h */,
+				904D538312AAF23600B867C5 /* HebrewetTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		904D535612AAF23600B867C5 /* Hebrewet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 904D538912AAF23600B867C5 /* Build configuration list for PBXNativeTarget "Hebrewet" */;
+			buildPhases = (
+				904D535312AAF23600B867C5 /* Sources */,
+				904D535412AAF23600B867C5 /* Frameworks */,
+				904D535512AAF23600B867C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hebrewet;
+			productName = Hebrewet;
+			productReference = 904D535712AAF23600B867C5 /* Hebrewet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		904D537812AAF23600B867C5 /* HebrewetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 904D538C12AAF23600B867C5 /* Build configuration list for PBXNativeTarget "HebrewetTests" */;
+			buildPhases = (
+				904D537412AAF23600B867C5 /* Sources */,
+				904D537512AAF23600B867C5 /* Frameworks */,
+				904D537612AAF23600B867C5 /* Resources */,
+				904D537712AAF23600B867C5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HebrewetTests;
+			productName = HebrewetTests;
+			productReference = 904D537912AAF23600B867C5 /* HebrewetTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		904D534A12AAF23500B867C5 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 904D534D12AAF23500B867C5 /* Build configuration list for PBXProject "Hebrewet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 904D534812AAF23500B867C5;
+			productRefGroup = 904D535812AAF23600B867C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				904D535612AAF23600B867C5 /* Hebrewet */,
+				904D537812AAF23600B867C5 /* HebrewetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		904D535512AAF23600B867C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904D536412AAF23600B867C5 /* InfoPlist.strings in Resources */,
+				904D536C12AAF23600B867C5 /* MainWindow.xib in Resources */,
+				904D537212AAF23600B867C5 /* HebrewetViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904D537612AAF23600B867C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904D538012AAF23600B867C5 /* InfoPlist.strings in Resources */,
+				904D538212AAF23600B867C5 /* HebrewetTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		904D537712AAF23600B867C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		904D535312AAF23600B867C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904D536612AAF23600B867C5 /* Hebrewet-main.m in Sources */,
+				904D536912AAF23600B867C5 /* HebrewetAppDelegate.m in Sources */,
+				904D536F12AAF23600B867C5 /* HebrewetViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904D537412AAF23600B867C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				904D538412AAF23600B867C5 /* HebrewetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		904D536212AAF23600B867C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				904D536312AAF23600B867C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		904D536A12AAF23600B867C5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				904D536B12AAF23600B867C5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		904D537012AAF23600B867C5 /* HebrewetViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				904D537112AAF23600B867C5 /* en */,
+			);
+			name = HebrewetViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		904D538512AAF23600B867C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		904D538612AAF23600B867C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		904D538712AAF23600B867C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		904D538812AAF23600B867C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		904D538A12AAF23600B867C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hebrewet-Prefix.pch";
+				INFOPLIST_FILE = "Hebrewet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		904D538B12AAF23600B867C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hebrewet-Prefix.pch";
+				INFOPLIST_FILE = "Hebrewet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		904D538D12AAF23600B867C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HebrewetTests-Prefix.pch";
+				INFOPLIST_FILE = "HebrewetTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		904D538E12AAF23600B867C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HebrewetTests-Prefix.pch";
+				INFOPLIST_FILE = "HebrewetTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		904D538F12AAF23600B867C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = HebrewetTests;
+			};
+			name = Debug;
+		};
+		904D539012AAF23600B867C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = HebrewetTests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		904D534D12AAF23500B867C5 /* Build configuration list for PBXProject "Hebrewet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904D538512AAF23600B867C5 /* Debug */,
+				904D538612AAF23600B867C5 /* Release */,
+				904D538712AAF23600B867C5 /* Debug */,
+				904D538812AAF23600B867C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		904D538912AAF23600B867C5 /* Build configuration list for PBXNativeTarget "Hebrewet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904D538A12AAF23600B867C5 /* Debug */,
+				904D538B12AAF23600B867C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		904D538C12AAF23600B867C5 /* Build configuration list for PBXNativeTarget "HebrewetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904D538D12AAF23600B867C5 /* Debug */,
+				904D538E12AAF23600B867C5 /* Release */,
+				904D538F12AAF23600B867C5 /* Debug */,
+				904D539012AAF23600B867C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 904D534A12AAF23500B867C5 /* Project object */;
+}
