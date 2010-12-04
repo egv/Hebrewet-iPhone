@@ -10,7 +10,13 @@
 
 
 @interface CardManager : NSObject {
-
+    NSArray *cards;
 }
+
+@property (nonatomic, retain) NSArray *cards;
+
++ (CardManager*)sharedManager;
+
+
 
 @end
