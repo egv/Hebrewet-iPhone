@@ -1,0 +1,6 @@
+h1. Simple HEbrew alphabet flashcard app
+
+Made it for myself and my wife so we can learn hebrew alphabet. Will try to improve it as I improve my hebrew knowlege.\
+
+
+You can do whatever you want with this software, but you can not publish it or any of it's derivatives in the appstore.
