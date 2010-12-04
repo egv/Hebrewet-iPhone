@@ -1,0 +1,110 @@
+[
+    {
+        "front": "א",
+        "back": "Alef"
+    },
+    {
+        "front": "ב",
+        "back": "Bet"
+    },
+    {
+        "front": "ג",
+        "back": "Gimel"
+    },
+    {
+        "front": "ד",
+        "back": "Dalet"
+    },
+    {
+        "front": "ה",
+        "back": "He"
+    },
+    {
+        "front": "ו",
+        "back": "Vav"
+    },
+    {
+        "front": "Zayin",
+        "back": "ז"
+    },
+    {
+        "front": "ח",
+        "back": "Het"
+    },
+    {
+        "front": "ט",
+        "back": "Tet"
+    },
+    {
+        "front": "י",
+        "back": "Yod"
+    },
+    {
+        "front": "כ",
+        "back": "Kaf"
+    },
+    {
+        "front": "ך",
+        "back": "Kaf"
+    },
+    {
+        "front": "ל",
+        "back": "Lamed"
+    },
+    {
+        "front": "מ",
+        "back": "Mem"
+    },
+    {
+        "front": "ם",
+        "back": "Mem"
+    },
+    {
+        "front": "נ",
+        "back": "Nun"
+    },
+    {
+        "front": "ן",
+        "back": "Nun"
+    },
+    {
+        "front": "ס",
+        "back": "Samekh"
+    },
+    {
+        "front": "ע",
+        "back": "Ayin"
+    },
+    {
+        "front": "פ",
+        "back": "Pe"
+    },
+    {
+        "front": "ף",
+        "back": "Pe"
+    },
+    {
+        "front": "צ",
+        "back": "Tsadi"
+    },
+    {
+        "front": "ץ",
+        "back": "Tsadi"
+    },
+    {
+        "front": "ק",
+        "back": "Qof"
+    },
+    {
+        "front": "ר",
+        "back": "Resh"
+    },
+    {
+        "front": "ש",
+        "back": "Shin"
+    },
+    {
+        "front": "ת",
+        "back": "Tav"
+    }
+]
