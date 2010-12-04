@@ -6,44 +6,88 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+#import "CardManager.h"
 #import "HebrewetViewController.h"
+
+@interface HebrewetViewController ()
+
+- (void)frontViewTapped:(UIGestureRecognizer*)recognizer;
+- (void)backViewTapped:(UIGestureRecognizer*)recognizer;
+
+@end
 
 @implementation HebrewetViewController
 
+@synthesize frontView;
+@synthesize backView;
+@synthesize frontLabel;
+@synthesize backLabel;
 
+@synthesize currentCard;
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
+#pragma mark -
+#pragma mark private actions
+
+- (void)frontViewTapped:(UIGestureRecognizer *)recognizer {
+    self.backLabel.text = [currentCard objectForKey:@"back"];
+    
+    [UIView beginAnimations:@"sides flip" context:NULL];
+    
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+    
+    [self.frontView removeFromSuperview];
+    [self.view addSubview:self.backView];
+    
+    [UIView commitAnimations];
 }
-*/
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
+- (void)backViewTapped:(UIGestureRecognizer *)recognizer {
+    self.currentCard = [[CardManager sharedManager] nextCard];
+    
+    self.frontLabel.text = [self.currentCard objectForKey:@"front"];
+    
+    [UIView beginAnimations:@"sides flip" context:NULL];
+    
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+    
+    [self.backView removeFromSuperview];
+    [self.view addSubview:self.frontView];
+    
+    [UIView commitAnimations];    
 }
-*/
 
+#pragma mark -
+#pragma mark view setup
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    UITapGestureRecognizer *frontTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(frontViewTapped:)];
+    frontTapRecognizer.numberOfTapsRequired = 1;
+    frontTapRecognizer.numberOfTouchesRequired =1;
+    [self.frontView addGestureRecognizer:frontTapRecognizer];
+    [frontTapRecognizer release];
+
+    UITapGestureRecognizer *backTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backViewTapped:)];
+    backTapRecognizer.numberOfTapsRequired = 1;
+    backTapRecognizer.numberOfTouchesRequired =1;
+    [self.backView addGestureRecognizer:backTapRecognizer];
+    [backTapRecognizer release];
+    
+    // set up first view
+    
+    self.currentCard = [[CardManager sharedManager] nextCard];
+    self.frontLabel.text = [self.currentCard objectForKey:@"front"];
+
+    [self.view addSubview:self.frontView];
 }
-*/
 
 
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+#pragma mark -
+#pragma mark memoty management
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -59,6 +103,14 @@
 
 
 - (void)dealloc {
+    [currentCard release];
+    
+    [frontView release];
+    [frontLabel release];
+    
+    [backView release];
+    [backLabel release];
+    
     [super dealloc];
 }
 
