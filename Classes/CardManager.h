@@ -11,12 +11,14 @@
 
 @interface CardManager : NSObject {
     NSArray *cards;
+    NSMutableArray *unusedCards;
 }
 
 @property (nonatomic, retain) NSArray *cards;
+@property (nonatomic, retain) NSMutableArray *unusedCards;
 
 + (CardManager*)sharedManager;
 
-
+- (NSDictionary*)nextCard;
 
 @end

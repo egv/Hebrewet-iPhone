@@ -12,6 +12,7 @@
 @implementation CardManager
 
 @synthesize cards;
+@synthesize unusedCards;
 
 + (CardManager*)sharedManager {
     static CardManager *INSTANCE;
@@ -21,6 +22,18 @@
     }
     
     return INSTANCE;
+}
+
+- (NSDictionary*)nextCard {
+    if (!self.unusedCards || [self.unusedCards count] == 0) {
+        self.unusedCards = [self.cards mutableCopy];
+    }
+    
+    NSInteger index = arc4random() % [self.unusedCards count];
+    NSDictionary *result = [self.unusedCards objectAtIndex:index];
+    [self.unusedCards removeObjectAtIndex:index];
+    
+    return result;
 }
 
 #pragma mark -
@@ -54,6 +67,7 @@
 
 - (void)dealloc {
     [cards release];
+    [unusedCards release];
     
     [super dealloc];
 }
